@@ -22,7 +22,7 @@ namespace shortenerTools.JiraIssue
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
 
-            var redirectUrl = $"https://chromehearts.atlassian.net/servicedesk/customer/portal/7/group/28/create/144?customfield_10638={val1}?&customfield_10639={val2}";
+            var redirectUrl = $"https://chromehearts.atlassian.net/servicedesk/customer/portal/7/group/28/create/144?customfield_10638={val1}&customfield_10639={val2}";
             return new RedirectResult(redirectUrl);
         }
     }
