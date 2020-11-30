@@ -24,7 +24,7 @@ namespace shortenerTools.JiraIssue
 
             var redirectUrl = val3 == null 
                 ? $"https://chromehearts.atlassian.net/servicedesk/customer/portal/7/group/28/create/144?customfield_10638={val1}&customfield_10639={val2}"
-                : $"https://chromehearts.atlassian.net/servicedesk/customer/portal/7/group/28/create/144?customfield_10638={val1}&customfield_10639={val2}&summary=Issue%20in%3A%20{val1}.{val2}:%20{val3}";
+                : $"https://chromehearts.atlassian.net/servicedesk/customer/portal/7/group/28/create/144?customfield_10638={val1}&customfield_10639={val2}&summary=Issue%20in%20{val1}.{val2}%3A%20{val3}";
             return new RedirectResult(redirectUrl);
         }
     }
